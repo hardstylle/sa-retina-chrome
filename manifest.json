@@ -1,0 +1,25 @@
+{
+  "name": "Retina SA Emoticons",
+  "version": "1.0",
+  "description": "Swaps SA emoticons for retina versions",
+  "background": { "scripts": ["background.js"] },
+  "content_scripts": [
+    { "matches": ["http://forums.somethingawful.com/*"], "js": ["swap.js"] }
+  ],
+  "page_action" :
+  {
+    "default_icon" : "emoticons/emot-v@2x.gif",
+    "default_title" : "Retina Emoticons Enabled"
+  },
+  "permissions": [
+    "tabs", "http://forums.somethingawful.com/*"
+  ],
+  "web_accessible_resources": [
+    "emoticons/*"
+  ],
+  "icons" : {
+    "48" : "emoticons/emot-v@2x.gif",
+    "128" : "emoticons/emot-v@2x.gif"
+  },
+  "manifest_version": 2
+}
