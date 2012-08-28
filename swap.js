@@ -3,7 +3,7 @@ function swapEmoticons() {
 	for (var i = 0; i < imgs.length; ++i) {
   		var item = imgs[i];
   		//console.log('item.src='+item.src);
-  		if ((item.src.indexOf('i.somethingawful.com/forumsystem/emoticons/') > -1 || item.src.indexOf('http://fi.somethingawful.com/images/smilies/emot-v.gif') > -1) && item.src.indexOf('@2x') == -1 ) {
+  		if ((item.src.indexOf('i.somethingawful.com/forumsystem/emoticons/') > -1 || item.src.indexOf('http://fi.somethingawful.com/images/smilies/') > -1) && item.src.indexOf('@2x') == -1 ) {
   			
   			var height = item.offsetHeight;
   			var width = item.offsetWidth;
